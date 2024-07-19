@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring_redis_start
+  datasource:
+    url: jdbc:postgresql://localhost/spredis
+    password: postgres
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
+  jpa:
+    database-platform: POSTGRESQL
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
